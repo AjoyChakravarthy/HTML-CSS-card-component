@@ -1,3 +1,4 @@
+/* Reset & Global Styles */
 * {
    margin: 0;
    padding: 0;
@@ -8,47 +9,66 @@ body {
    background-color: hsl(212, 45%, 89%);
    font-family: "Outfit", sans-serif;
    color: hsl(218, 44%, 22%);
-}
-p {
-   font-size: 15px;
-   font-weight: 400;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   padding: 20px;
 }
 
 .card {
    max-width: 90%;
    width: 340px;
-   height: fit-content;
    background-color: white;
    padding: 20px;
    border-radius: 15px;
-   position: absolute;
-   top: 0;
-   bottom: 0;
-   left: 0;
-   right: 0;
-   margin: auto;
    text-align: center;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease-in-out;
 }
+
+.card:hover {
+   transform: scale(1.02);
+}
+
 .card img {
    width: 100%;
-   height: 100%;
+   max-height: 300px;
    object-fit: contain;
-   border-radius: 15px;
+   border-radius: 10px;
+   display: block;
+   margin: auto;
 }
+
 .card-content {
-   padding: 10px;
+   margin: 12px 8px;
 }
+
 h1 {
-   font-size: 25px;
+   font-size: 22px;
    font-weight: 700;
-   padding: 10px;
+   padding-bottom: 8px;
+   color: hsl(218, 44%, 18%);
+}
+
+p {
+   font-size: 15px;
+   font-weight: 400;
+   color: hsl(220, 15%, 55%);
+   line-height: 1.5;
 }
 
 @media (max-width: 375px) {
-   .card img {
-      max-width: 280px;
+   .card {
+      width: 300px;
+      padding: 16px;
    }
+
    h1 {
-      font-size: 20px;
+      font-size: 18px;
+   }
+
+   p {
+      font-size: 14px;
    }
 }

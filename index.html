@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
    <head>
       <meta charset="UTF-8" />
       <meta
@@ -30,21 +30,28 @@
          href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
          rel="stylesheet"
       />
-      <title>QR code component</title>
+
+      <title>QR Code Component</title>
    </head>
    <body>
-      <div class="card">
-         <img
-            src="./images/image-qr-code.png"
-            alt="Qr Code"
-         />
-         <div class="card-content">
-            <h1>Imporve your front-end skills by building projects</h1>
-            <p>
-               Scan the QR code to visit Frontend Mentor and take your coding
-               skills to the next level
-            </p>
-         </div>
-      </div>
+      <main>
+         <section class="card">
+            <img
+               src="./images/image-qr-code.png"
+               alt="QR code leading to Frontend Mentor website"
+            />
+            <div class="card-content">
+               <h1
+                  aria-label="Improve your front-end skills by building projects"
+               >
+                  Improve your front-end skills by building projects
+               </h1>
+               <p>
+                  Scan the QR code to visit Frontend Mentor and take your coding
+                  skills to the next level.
+               </p>
+            </div>
+         </section>
+      </main>
    </body>
 </html>
